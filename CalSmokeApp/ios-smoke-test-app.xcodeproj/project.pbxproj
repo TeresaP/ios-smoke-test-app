@@ -12,6 +12,7 @@
 		4d0c7f3c9aec5f7df4bec8e1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F52BFB0F1987EF8700299AEF /* Foundation.framework */; };
 		50dcfd2fda33dd49fb5c0808 /* calabash.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42539422bf8ed8e8569bc355 /* calabash.framework */; };
 		814483887d80377735a56b6a /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F52BFB111987EF8700299AEF /* CoreGraphics.framework */; };
+		8DFC4D6F1CAC4DDC00E69849 /* CalSmoke_calUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DFC4D6E1CAC4DDC00E69849 /* CalSmoke_calUITests.m */; };
 		F5097D071B6B7C0E00326D6A /* CalGestureListController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F5097D051B6B7C0E00326D6A /* CalGestureListController.xib */; };
 		F5097D081B6B7C0E00326D6A /* CalGestureListController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F5097D051B6B7C0E00326D6A /* CalGestureListController.xib */; };
 		F51ADFE81B9F2D4B008C02F0 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = F51ADFE61B9F2D4B008C02F0 /* LaunchScreen.xib */; };
@@ -127,8 +128,21 @@
 		f23b5a94a19df2bb34667ee7 /* CalAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F52BFB1F1987EF8700299AEF /* CalAppDelegate.m */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		8DFC4D711CAC4DDC00E69849 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F52BFB041987EF8700299AEF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = aa8f030ac9159ee56ef3af27;
+			remoteInfo = "CalSmoke-cal";
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
 		42539422bf8ed8e8569bc355 /* calabash.framework */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = wrapper.framework; path = calabash.framework; sourceTree = "<group>"; };
+		8DFC4D6C1CAC4DDC00E69849 /* CalSmoke-calUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "CalSmoke-calUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8DFC4D6E1CAC4DDC00E69849 /* CalSmoke_calUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CalSmoke_calUITests.m; sourceTree = "<group>"; };
+		8DFC4D701CAC4DDC00E69849 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F5097D061B6B7C0E00326D6A /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/CalGestureListController.xib; sourceTree = "<group>"; };
 		F51ADFE71B9F2D4B008C02F0 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		F52252BB1B75FD27004235EF /* CalAnimatedView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CalAnimatedView.h; sourceTree = "<group>"; };
@@ -242,6 +256,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		8DFC4D691CAC4DDC00E69849 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		F52BFB091987EF8700299AEF /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -259,10 +280,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8DFC4D6D1CAC4DDC00E69849 /* CalSmoke-calUITests */ = {
+			isa = PBXGroup;
+			children = (
+				8DFC4D6E1CAC4DDC00E69849 /* CalSmoke_calUITests.m */,
+				8DFC4D701CAC4DDC00E69849 /* Info.plist */,
+			);
+			path = "CalSmoke-calUITests";
+			sourceTree = "<group>";
+		};
 		F52BFB031987EF8700299AEF = {
 			isa = PBXGroup;
 			children = (
 				F52BFB151987EF8700299AEF /* CalSmokeApp */,
+				8DFC4D6D1CAC4DDC00E69849 /* CalSmoke-calUITests */,
 				F52BFB0E1987EF8700299AEF /* Frameworks */,
 				F52BFB0D1987EF8700299AEF /* Products */,
 			);
@@ -273,6 +304,7 @@
 			children = (
 				F52BFB0C1987EF8700299AEF /* CalSmoke.app */,
 				F5FE79621988070200842E74 /* CalSmoke-cal.app */,
+				8DFC4D6C1CAC4DDC00E69849 /* CalSmoke-calUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -477,6 +509,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		8DFC4D6B1CAC4DDC00E69849 /* CalSmoke-calUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8DFC4D751CAC4DDC00E69849 /* Build configuration list for PBXNativeTarget "CalSmoke-calUITests" */;
+			buildPhases = (
+				8DFC4D681CAC4DDC00E69849 /* Sources */,
+				8DFC4D691CAC4DDC00E69849 /* Frameworks */,
+				8DFC4D6A1CAC4DDC00E69849 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8DFC4D721CAC4DDC00E69849 /* PBXTargetDependency */,
+			);
+			name = "CalSmoke-calUITests";
+			productName = "CalSmoke-calUITests";
+			productReference = 8DFC4D6C1CAC4DDC00E69849 /* CalSmoke-calUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 		F52BFB0B1987EF8700299AEF /* CalSmoke */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = F52BFB411987EF8700299AEF /* Build configuration list for PBXNativeTarget "CalSmoke" */;
@@ -523,6 +573,12 @@
 				CLASSPREFIX = Cal;
 				LastUpgradeCheck = 0700;
 				ORGANIZATIONNAME = Calabash;
+				TargetAttributes = {
+					8DFC4D6B1CAC4DDC00E69849 = {
+						CreatedOnToolsVersion = 7.2.1;
+						TestTargetID = aa8f030ac9159ee56ef3af27;
+					};
+				};
 			};
 			buildConfigurationList = F52BFB071987EF8700299AEF /* Build configuration list for PBXProject "ios-smoke-test-app" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -539,6 +595,7 @@
 			targets = (
 				F52BFB0B1987EF8700299AEF /* CalSmoke */,
 				aa8f030ac9159ee56ef3af27 /* CalSmoke-cal */,
+				8DFC4D6B1CAC4DDC00E69849 /* CalSmoke-calUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -569,6 +626,13 @@
 				F5A31D131B664BF90094B768 /* CalTableViewContoller.xib in Resources */,
 				F5A5CB711C8A7004001ECC15 /* CalGLController.xib in Resources */,
 				F5A5CB6F1C8A6F5E001ECC15 /* SimpleVertex.glsl in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8DFC4D6A1CAC4DDC00E69849 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -651,6 +715,14 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		8DFC4D681CAC4DDC00E69849 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8DFC4D6F1CAC4DDC00E69849 /* CalSmoke_calUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		F52BFB081987EF8700299AEF /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -728,6 +800,14 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		8DFC4D721CAC4DDC00E69849 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = aa8f030ac9159ee56ef3af27 /* CalSmoke-cal */;
+			targetProxy = 8DFC4D711CAC4DDC00E69849 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		F5097D051B6B7C0E00326D6A /* CalGestureListController.xib */ = {
@@ -879,6 +959,45 @@
 				PRODUCT_NAME = "CalSmoke-cal";
 				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		8DFC4D731CAC4DDC00E69849 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "CalSmoke-calUITests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Calabash.CalSmoke-calUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "CalSmoke-cal";
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		8DFC4D741CAC4DDC00E69849 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "CalSmoke-calUITests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Calabash.CalSmoke-calUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "CalSmoke-cal";
+				USES_XCTRUNNER = YES;
 			};
 			name = Release;
 		};
@@ -1043,6 +1162,14 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;
+		};
+		8DFC4D751CAC4DDC00E69849 /* Build configuration list for PBXNativeTarget "CalSmoke-calUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8DFC4D731CAC4DDC00E69849 /* Debug */,
+				8DFC4D741CAC4DDC00E69849 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 		F52BFB071987EF8700299AEF /* Build configuration list for PBXProject "ios-smoke-test-app" */ = {
 			isa = XCConfigurationList;
