@@ -1087,7 +1087,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)",
 				);
-				ONLY_ACTIVE_ARCH = NO;
+				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = "sh.calaba.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = CalSmoke;
 				PROVISIONING_PROFILE = "";
@@ -1170,6 +1170,7 @@
 				8DFC4D741CAC4DDC00E69849 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
 		};
 		F52BFB071987EF8700299AEF /* Build configuration list for PBXProject "ios-smoke-test-app" */ = {
 			isa = XCConfigurationList;
